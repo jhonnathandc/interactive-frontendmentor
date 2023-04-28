@@ -1,0 +1,75 @@
+.card-bg {
+  background-color: $dark;
+
+  .card {
+    display: block;
+    background-image: $radial;
+    padding: 32px;
+    border-radius: 30px;
+    max-width: 412px;
+
+    .icon {
+      display: inline-block;
+      background-color: $gray-dark;
+      padding: 16px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+
+      @include responsive(xs) {
+        margin-bottom: 16px;
+      }
+    }
+
+    h1 {
+      @include type-1(h1, desktop);
+      color: $white;
+      margin-bottom: 7px;
+      @include responsive(xs) {
+        @include type-1(h1, mobile);
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      @include type-1(p1, desktop);
+      color: $gray-light;
+      margin-bottom: 24px;
+      @include responsive(xs) {
+        @include type-1(p1, mobile);
+      }
+    }
+
+    .numbers {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      .number {
+        background-color: $gray-dark;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        @include type-1(p2, desktop);
+        color: $gray-normal;
+
+        @include responsive(xs) {
+          @include type-1(p2, mobile);
+        }
+
+        &:hover {
+          background-color: $orange;
+          color: $white;
+        }
+
+        &.active {
+          background-color: $gray-light;
+          color: $white;
+        }
+      }
+    }
+  }
+}

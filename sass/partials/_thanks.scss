@@ -1,0 +1,58 @@
+.thanks {
+  margin: 24px;
+  background-image: $radial;
+  padding: 45px 40px 45px 32px;
+  border-radius: 30px;
+  max-width: 412px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  z-index: 10;
+
+  &.active {
+    display: flex;
+  }
+
+  .selected {
+    display: block;
+    background-color: $gray-dark;
+    padding: 4px 20px;
+    border-radius: 22px;
+
+    @include type-1(p1, desktop);
+    color: $orange;
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    @include responsive(xs) {
+      @include type-1(p1, mobile);
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  h1 {
+    @include type-1(h1, desktop);
+    color: $white;
+    margin-bottom: 7px;
+
+    @include responsive(xs) {
+      @include type-1(h1, mobile);
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    @include type-1(p1, desktop);
+    color: $gray-light;
+    text-align: center;
+
+    @include responsive(xs) {
+      @include type-1(p1, mobile);
+    }
+  }
+}

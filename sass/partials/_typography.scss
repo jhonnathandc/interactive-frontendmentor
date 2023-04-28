@@ -1,0 +1,34 @@
+@mixin type-1($size, $device) {
+  font-family: "Overpass";
+
+  // H1
+  @if ($size == h1 and $device == desktop) {
+    font-size: 2.8rem;
+    font-weight: 700;
+  } @else if ($size == h1 and $device == desktop) {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  // P1
+  @else if ($size == p1 and $device == desktop) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  } @else if ($size == p1 and $device == mobile) {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+  }
+
+  // P2
+  @else if ($size == p2 and $device == desktop) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  } @else if ($size == p2 and $device == mobile) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,20 @@
+.btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $orange;
+  border: none;
+  padding: 11px 22px;
+  width: 100%;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn:hover {
+  color: $orange;
+  background-color: $white;
+}
