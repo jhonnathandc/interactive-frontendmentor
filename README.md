@@ -1,20 +1,27 @@
-# JavaScript - Origamid
+# Interactive Rating - FrontEnd Mentor
 
-Aqui neste repositório estão os exercícios feitos nas aulas da [Origamid](https://www.origamid.com).
+Esse projeto faz parte dos desafios do [FrontEnd Mentor](https://www.frontendmentor.io/).
 
-OBS: Existem arquivos HTML e CSS pois está sendo manipulado um site em alguns momentos.
+[Acesse o site aqui.](https://interactive-frontendmentor.vercel.app/)
+<br>
+<br>
+[Acesse o desafio aqui.](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
+
+## Demonstração
+
+![Wireframe - 1](https://user-images.githubusercontent.com/82620787/235030340-9208d03f-d8f7-4124-bb08-4b86d59ecf37.png)
+
+## Mais Informações
+
+Foi construído como proposto no design, utilizando:
+
+- HTML
+- CSS
+- JavaScript
 
 ## Stack
 
-- JavaScript
-
-## Autores
-
-- [Origamid Site](https://www.origamid.com)
-
-- [Origamid Intagram](https://www.instagram.com/origamid.cursos/)
-
-- [Origamid Github](https://github.com/origamid)
+**Front-end:** HTML, CSS
 
 ## License
 
