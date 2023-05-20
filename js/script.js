@@ -1,11 +1,11 @@
-function numberActive() {
+function numberClickHandlers() {
   const numbers = document.querySelectorAll(".number");
 
   numbers.forEach((number) => {
-    number.addEventListener("click", handleClick);
+    number.addEventListener("click", handleNumberClick);
   });
 
-  function handleClick(event) {
+  function handleNumberClick(event) {
     const containActive = event.target.classList.contains("active");
 
     if (!containActive) {
@@ -17,22 +17,26 @@ function numberActive() {
     event.target.classList.add("active");
 
     const value = event.target.value;
-    selected(value);
+    updateSelectedValue(value);
   }
 }
-numberActive();
 
-const button = document.querySelector(".btn");
-const thanks = document.querySelector(".thanks");
-const selectedSpan = document.querySelector(".selected");
-
-button.addEventListener("click", activeThanks);
-
-function activeThanks(event) {
-  event.preventDefault();
-  thanks.classList.add("active");
-}
-
-function selected(value) {
+function updateSelectedValue(value) {
+  const selectedSpan = document.querySelector(".selected");
   selectedSpan.innerText = `You selected ${value} out of 5`;
 }
+
+function setupButton() {
+  const button = document.querySelector(".btn");
+  const thanks = document.querySelector(".thanks");
+
+  button.addEventListener("click", handleButtonClick);
+
+  function handleButtonClick(event) {
+    event.preventDefault();
+    thanks.classList.add("active");
+  }
+}
+
+numberClickHandlers();
+setupButton();
